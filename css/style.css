@@ -1,0 +1,31 @@
+* {	box-sizing: border-box;	margin: 0;	padding: 0; }
+.mltr { margin-left: 5%; margin-right: 5%; }
+#menu {
+	background-color: #191919;
+	color: #fff;
+	overflow: hidden;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+#menu-bar {
+	
+	width: 5%;
+	float: left;
+}
+#brand-name {
+
+	width: 20%;
+	float: left;
+}
+#brand-name span {
+
+	color: #9b0d0b;
+}
+#logo {
+
+	float: right;
+	width: 25%;
+}
+#logo img {
+	width: 100%;
+}
