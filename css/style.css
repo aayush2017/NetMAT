@@ -6,8 +6,8 @@
 .color-black { color: #000 !important; }
 .color-white { color: #fff !important; }
 .color-red { color: #d0151e !important; }
-.color-green { color: green; }
-.color-light { color: #6d7f81; }
+.color-green { color: #65b27e; }
+.color-light { color: #fff; }
 .text-bold { font-weight: bold; }
 
 .btn-red-white {
@@ -20,6 +20,7 @@
 	padding: 2%;
 	margin-top: 2%;
 	margin-bottom: 2%;
+	cursor: pointer;
 }
 .btn-white-red {
 	background-color: #fff;
@@ -29,6 +30,8 @@
 	padding: 2%;
 	margin-top: 2%;
 	margin-bottom: 2%;
+	width: 25%;
+	cursor: pointer;
 }
 body { 
 	background-color: #010101; 
@@ -59,6 +62,7 @@ body {
 	margin-left: 2%;
 	font-size: 1.1em;
 	margin-top: 2%;
+	font-weight: bold;
 }
 #brand-name span {
 	color: #9b0d0b;
@@ -139,10 +143,16 @@ body {
 	font-weight: bold;
 }
 #menu-item a:last-child { margin-right: 0; }
-#box-detail {clear: both;overflow: hidden; background-image: url("../img/UR-poster.jpg"); height: 375px;background-size: cover;background-position: top center;}
+#box-detail {
+	clear: both;
+	overflow: hidden; 
+	background-image: url("../img/UR-poster.jpg"); 
+	height: 375px;
+	background-size: cover;
+	background-position: top center;
+}
 #box-detail img { width: 100%; }
-#box-detail-posi {
-	
+#box-detail-posi {	
 	position: absolute;
 	bottom: 23%;
 	background-color: rgba(0,0,0,.5);
@@ -150,7 +160,6 @@ body {
 	padding-top: 5%;
 }
 #play-control {
-
 	clear: both;
 	overflow: hidden;
 	text-align: center;
@@ -159,18 +168,9 @@ body {
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
-#tag-name {
-
-	text-align: center;
-}
-#tag-name span {
-	
-}
-#tag-name span i {
-	
-	color: #d0151e;
-	font-size: .5em;
-}
+#tag-name {	text-align: center; }
+#tag-name span {  }
+#tag-name span i { color: #d0151e; font-size: .5em; }
 
 #pcplus {width: 25%; text-align: center; float: left;}
 #pcplus i {}
@@ -192,20 +192,23 @@ body {
 
 #pcinfo {width: 25%;float: left;}
 #pcinfo i {}
-#pcinfo span {display: block;}
+#pcinfo span { display: block; }
 /*Page 3 Css*/
 #video-detail {  background-image: linear-gradient(black, #6d7f81);  }
-#vd-close {position: absolute;right: 5%;top: 5%;}
+#vd-close { position: absolute;right: 5%;top: 5%; }
 #vd-close i {}
+
 #vd-img {}
 #vd-img img { width: 100%; }
-#vd-img-img {width: 50%;margin: 0 auto;}
+#vd-img-img { width: 50%;margin: 0 auto; }
 #vd-img-cap {  text-align: center;}
 #vd-img-cap span {  margin-right: 5%;}
+
 #vd-playbutton {  }
 #vd-img p:first-child {}
 #vd-img p { line-height: 20px; }
-#vd-tab {border-top: 3px solid gray;}
+
+#vd-tab { border-top: 3px solid gray; }
 #vd-tab a { 
 	position: relative; 
 	text-decoration: navajowhite;
