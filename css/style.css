@@ -62,10 +62,10 @@ body {
 	margin-left: 2%;
 	font-size: 1.1em;
 	margin-top: 2%;
-	font-weight: bold;
+	font-weight: 900;
 }
 #brand-name span {
-	color: #9b0d0b;
+	color: #ec1a23;
 }
 #logo {
 
@@ -150,14 +150,16 @@ body {
 	height: 375px;
 	background-size: cover;
 	background-position: top center;
+	position: relative;
 }
 #box-detail img { width: 100%; }
-#box-detail-posi {	
+#box-detail-posi {
 	position: absolute;
-	bottom: 23%;
+	bottom: 0%;
 	background-color: rgba(0,0,0,.5);
 	width: 100%;
 	padding-top: 5%;
+	padding-left: 7%;
 }
 #play-control {
 	clear: both;
