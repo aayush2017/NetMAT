@@ -1,0 +1,46 @@
+{
+    "items": [
+        {
+            "movieID": "1",
+            "title": "URI",
+            "poster": "img/UR-poster.jpg",
+            "moviePoint":[
+                    "Action",
+                    "Suspense",
+                    "Thrill",
+                    "Drama"
+            ],
+            "movieTime":[
+                    "96% match",
+                    "20",
+                    "16+",
+                    "1h 30m"
+            ],
+            "discription" : "Major Vihaan Singh Shergill of the Indian Army leads a covert operation against a group of militants who attacked a base in Uri, Kashmir, in 2016 and killed many soldiers.",
+            "cast": "Vicky Kausal, Yami Gautam",
+            "director" : "Aditya Dhar",
+            "videoUrl": "https://www.youtube.com/embed/VVY3do673Zc"
+        },
+        {
+            "movieID": "2",
+            "title": "Razi",
+            "poster": "img/razi.jpg",
+            "moviePoint":[
+                    "Action",
+                    "Suspense",
+                    "Thrill",
+                    "Drama"
+            ],
+            "movieTime":[
+                    "96% match",
+                    "20",
+                    "16+",
+                    "1h 30m"
+            ],
+            "discription" : "Major Vihaan Singh Shergill of the Indian Army leads a covert operation against a group of militants who attacked a base in Uri, Kashmir, in 2016 and killed many soldiers.",
+            "cast": "Vicky Kausal, Yami Gautam",
+            "director" : "Aditya Dhar",
+            "videoUrl": "https://www.youtube.com/embed/YjMSttRJrhA"
+        }
+    ]
+} 
