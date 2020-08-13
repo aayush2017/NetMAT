@@ -6,7 +6,30 @@
 .color-black { color: #000 !important; }
 .color-white { color: #fff !important; }
 .color-red { color: #d0151e !important; }
+.color-green { color: green; }
+.color-light { color: #6d7f81; }
+.text-bold { font-weight: bold; }
 
+.btn-red-white {
+	background-color: red;
+	color: #fff;
+	border-radius: 10px;
+	display: block;
+	width: 100%;
+	border: none;
+	padding: 2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+.btn-white-red {
+	background-color: #fff;
+	color: red;
+	border-radius: 5px;
+	border: none;
+	padding: 2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
 body { 
 	background-color: #010101; 
 	color: #fff; 
@@ -170,3 +193,34 @@ body {
 #pcinfo {width: 25%;float: left;}
 #pcinfo i {}
 #pcinfo span {display: block;}
+/*Page 3 Css*/
+#video-detail {  background-image: linear-gradient(black, #6d7f81);  }
+#vd-close {position: absolute;right: 5%;top: 5%;}
+#vd-close i {}
+#vd-img {}
+#vd-img img { width: 100%; }
+#vd-img-img {width: 50%;margin: 0 auto;}
+#vd-img-cap {  text-align: center;}
+#vd-img-cap span {  margin-right: 5%;}
+#vd-playbutton {  }
+#vd-img p:first-child {}
+#vd-img p { line-height: 20px; }
+#vd-tab {border-top: 3px solid gray;}
+#vd-tab a { 
+	position: relative; 
+	text-decoration: navajowhite;
+	color: #fff;
+	text-transform: uppercase;
+	display: inline-block;
+	margin: 3% 5%;
+	font-weight: bold;
+}
+#vd-tab a.active::before { content: ""; background-color: red; }
+#vd-tab a::before {
+	content: "";
+	position: absolute;
+	top: -14px;
+	left: 0;
+	height: 5px;
+	width: 100%;
+}
