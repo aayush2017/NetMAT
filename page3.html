@@ -24,9 +24,9 @@
 				<button class="btn-red-white" id="btn1"><i class="fas fa-play"></i> Play</button>			
 				<button class="btn-white-red" id="btn2"><i class="fas fa-play"></i> Trailer</button>			
 			</div> <br/>
-			<p class="text-bold">Major Vihaan Singh Shergill of the Indian Army leads a covert operation against a group of militants who attacked a base in Uri, Kashmir, in 2016 and killed many soldiers.</p> <br/>
-			<p class="color-light">Cast: Vicky Kausal, Yami Gautam</p>
-			<p class="color-light">Director: Aditya Dhar</p><br/>
+			<p class="text-bold" id="des">Major Vihaan Singh Shergill of the Indian Army leads a covert operation against a group of militants who attacked a base in Uri, Kashmir, in 2016 and killed many soldiers.</p> <br/>
+			<p class="color-light" id="cast">Cast: Vicky Kausal, Yami Gautam</p>
+			<p class="color-light" id="dire">Director: Aditya Dhar</p><br/>
 		</div>
 	</div>
 </div>
@@ -87,7 +87,11 @@ $(document).ready(function() {
 		var array = data.items[0].movieTime;
 		$.each(array,function(i){
 			$("#vd-img-cap").html($("#vd-img-cap").html() + '<span>'+ array[i] +'</span>');
-		});		
+		});	
+		$("#des").val(data.items[0].discription);	
+		$("#cast").val(data.items[0].cast);	
+		$("#dire").val(data.items[0].director);	
+		$("#show-video iframe").attr("src", data.items[0].videoUrl);
 	});
 	$("#btn1").click(function() {
 		$("#show-video").css("display", "block");
