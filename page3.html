@@ -18,11 +18,11 @@
 				<img src="img/URI.jpg" alt="URI.jpg" />
 			</div><br/>
 			<div id="vd-img-cap">
-				<span class="color-green text-bold">96% match</span> <span>2020</span> <span>16+</span> <span>1h 34m</span>
+				
 			</div><br/>
 			<div id="vd-playbutton">
-				<button class="btn-red-white"><i class="fas fa-play"></i> Play</button>			
-				<button class="btn-white-red"><i class="fas fa-play"></i> Trailer</button>			
+				<button class="btn-red-white" id="btn1"><i class="fas fa-play"></i> Play</button>			
+				<button class="btn-white-red" id="btn2"><i class="fas fa-play"></i> Trailer</button>			
 			</div> <br/>
 			<p class="text-bold">Major Vihaan Singh Shergill of the Indian Army leads a covert operation against a group of militants who attacked a base in Uri, Kashmir, in 2016 and killed many soldiers.</p> <br/>
 			<p class="color-light">Cast: Vicky Kausal, Yami Gautam</p>
@@ -50,6 +50,10 @@
 		</div>
 	</div>
 </div>
+
+<div id="show-video">
+	<iframe style="width: 100%; height: 255px;" src="https://www.youtube.com/embed/VVY3do673Zc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 <br/><br/><br/>
 <div class="footer-bar">
 	<div class="mltr">
@@ -75,5 +79,23 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+<script>
+$(document).ready(function() {
+	$.getJSON('mydata.json', function(data) {
+		$("#vd-img-img img").attr("src", data.items[0].poster);
+		var array = data.items[0].movieTime;
+		$.each(array,function(i){
+			$("#vd-img-cap").html($("#vd-img-cap").html() + '<span>'+ array[i] +'</span>');
+		});		
+	});
+	$("#btn1").click(function() {
+		$("#show-video").css("display", "block");
+	});
+	$("#btn2").click(function() {
+		$("#show-video").css("display", "block");
+	});
+});
+</script>
 </body>
 </html>

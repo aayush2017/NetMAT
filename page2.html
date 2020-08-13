@@ -23,10 +23,7 @@
 <div id="box-detail">
 	<div id="box-detail-posi">
 		<div id="tag-name">
-			<span>Action <i class="fas fa-circle"></i></span>
-			<span>Suspence <i class="fas fa-circle"></i></span>
-			<span>Thrill <i class="fas fa-circle"></i></span>
-			<span>Drama</span>
+			
 		</div>
 		<div id="play-control">
 			<div id="pcplus">
@@ -91,7 +88,10 @@
 <script>
 $(document).ready(function() {
 	$.getJSON('mydata.json', function(data) {
-	    alert(data);
+		var array = data.items[0].moviePoint;
+		$.each(array,function(i){
+			$("#tag-name").html($("#tag-name").html() + '<span>'+ array[i] +' <i class="fas fa-circle"></i></span> ');
+		});		
 	});
 });
 </script>

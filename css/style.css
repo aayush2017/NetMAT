@@ -195,13 +195,14 @@ body {
 #pcinfo span { display: block; }
 /*Page 3 Css*/
 #video-detail {  background-image: linear-gradient(black, #6d7f81);  }
-#vd-close { position: absolute;right: 5%;top: 5%; }
+#vd-close { position: absolute;right: 5%;top: 3%; }
 #vd-close i {}
 
 #vd-img {}
 #vd-img img { width: 100%; }
 #vd-img-img { width: 50%;margin: 0 auto; }
 #vd-img-cap {  text-align: center;}
+#vd-img-cap span:nth-child(1) {  font-weight: bold; color: #65b27e; }
 #vd-img-cap span {  margin-right: 5%;}
 
 #vd-playbutton {  }
@@ -226,4 +227,14 @@ body {
 	left: 0;
 	height: 5px;
 	width: 100%;
+}
+#show-video {
+	position: absolute;
+	top: 11%;
+	left: 0%;
+	width: 100%;
+	display: none;
+}
+#show-video iframe {
+
 }
